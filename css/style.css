@@ -270,8 +270,46 @@ a { color: var(--text-color); }
 
 .about__img {
   width: 150px;
-  border-radius: 0.5rem;
+  height: 150px;
+  border-radius: 50%;
   margin: 0 auto;
+  position: relative;
+  filter: blur(1px) contrast(5);
+}
+
+.dot__one,
+.dot__two,
+.dot__three {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+.dot__one {
+  top: 20%;
+}
+.dot__two {
+  width: 15px;
+  height: 15px;
+  background-color: var(--first-color);
+  border-top-right-radius: 0;
+  transform: translate(-50%, -40%) rotate(-45deg);
+  animation: drop 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
+.dot__three {
+  width: 50px;
+  height: 40px;
+  border-radius: 0;
+  top: 80%;
+  background-color: var(--first-color-dark);
+}
+@keyframes drop {
+  0% {top: 20%}
+  100% {top: 80%}
 }
 
 .about__information {
