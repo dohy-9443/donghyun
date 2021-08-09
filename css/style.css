@@ -369,8 +369,8 @@ a { color: var(--text-color); }
 .skills__css { width: 90%; }
 .skills__js { width: 80%; }
 .skills__jq { width: 85%; }
-.skills__jsp { width: 80%; }
-.skills__react { width: 70%; }
+.skills__jsp { width: 70%; }
+.skills__react { width: 50%; }
 .skills__git { width: 100%; }
 
 /* education */
