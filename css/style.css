@@ -203,6 +203,7 @@ a { color: var(--text-color); }
   /* overflow: hidden; */
   cursor: pointer;
   animation: move 1s infinite;
+  padding: 2rem;
 }
 
 @keyframes move {
