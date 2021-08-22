@@ -481,8 +481,7 @@ a { color: var(--text-color); }
     width: var(--nav-width);
   }
 
-  .about__container, 
-  .project__container {
+  .about__container {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2,1fr);
@@ -537,6 +536,14 @@ a { color: var(--text-color); }
     background-color: var(--first-color);
     padding: 3rem 0;
     border-radius: 0.5rem;
+  }
+}
+
+
+/* 반응형 */
+@media screen and (min-width: 800px) {
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
