@@ -270,14 +270,13 @@ a { color: var(--text-color); }
 
 .about__data {
   text-align: center;
+  border: 2px solid var(--first-color);
 }
 
 .about__description {
-  margin-bottom: var(--mb-4);
-}
-
-.about__information {
-  margin-bottom: var(--mb-4);
+  /* margin-bottom: var(--mb-4); */
+  padding: 2rem;
+  padding-bottom: 0;
 }
 
 .about__information-title {
@@ -302,6 +301,10 @@ a { color: var(--text-color); }
 /* skills */
 .skills__container {
   row-gap: 2rem;
+}
+
+.skills__content {
+  padding: 2rem;
 }
 
 .skills__subtitle {
@@ -479,7 +482,7 @@ a { color: var(--text-color); }
   }
 
   .about__container, 
-  .works__container {
+  .project__container {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2,1fr);
@@ -490,6 +493,11 @@ a { color: var(--text-color); }
   }
 
   .about__description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: var(--mb-5);
   }
 
@@ -500,6 +508,10 @@ a { color: var(--text-color); }
   .about__information {
     padding-left: 4rem;
   }
+
+  .skills__content {
+    padding: 4rem;
+  }  
 
   .education__time {
     padding: 0 2rem;
@@ -559,7 +571,11 @@ a { color: var(--text-color); }
     margin-right: auto;
   }
 
-  .works__container {
-    grid-template-columns: repeat(3, 1fr);
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .skills__content {
+    padding: 8rem;
+  }  
 }
