@@ -580,6 +580,6 @@ a { color: var(--text-color); }
   }
 
   .skills__content {
-    padding: 8rem;
+    padding: 5rem 15rem;
   }  
 }
