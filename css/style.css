@@ -540,13 +540,6 @@ a { color: var(--text-color); }
 }
 
 
-/* 반응형 */
-@media screen and (min-width: 800px) {
-  .project__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media screen and (min-width: 1024px) {
   body {
     margin: 0;
