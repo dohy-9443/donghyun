@@ -275,6 +275,7 @@ a { color: var(--text-color); }
 
 .about__description {
   /* margin-bottom: var(--mb-4); */
+  margin-bottom: var(--mb-5);
   padding: 2rem;
   padding-bottom: 0;
 }
@@ -492,11 +493,6 @@ a { color: var(--text-color); }
   }
 
   .about__description {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: var(--mb-5);
   }
 
